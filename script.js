@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    
-
     const contactUsBtn = document.querySelector('.header-btn');
     const header = document.querySelector('.header');
     const form = document.querySelector('.form');
@@ -128,7 +126,6 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error:', error));
     }
 
-    // Automatically update the carousel every 3 seconds
     setInterval(() => {
         currentIndex = (currentIndex + 1) % carousels.length;
         updateCarousel();
